@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /home/ubuntu/online-shop-front
+            cd /home/ubuntu/online-shop-test
             git pull origin main
             sudo systemctl restart nginx
